@@ -7,16 +7,17 @@ With `commonpass.py` you can quickly generate a relatively short wordlist of com
 ```
 > python3 commonpass.py -h
 
-usage: commonpass.py [-h] [--min-length MIN_LENGTH] [--lang LANG] organisation service
+usage: commonpass.py [-h] [--year YEAR] [--min-length MIN_LENGTH] [--lang LANG] organisation service
 
 Generate common weak passwords.
 
 positional arguments:
-  organisation          Organisation name
+  organisation          Organisation or product name
   service               Service name
 
 optional arguments:
   -h, --help            show this help message and exit
+  --year YEAR           Custom year, e.g. founding year of the organisation. Only applies to the org pattern.
   --min-length MIN_LENGTH
                         Minimum password length
   --lang LANG           Language code, "de" or "en"
